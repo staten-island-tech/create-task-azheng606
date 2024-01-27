@@ -28,7 +28,7 @@ const same = [];
 
                 }}
         if (same.length === 0) {
-        DOMSelectors.awman.textContent = "Oopsies nothing fouund ;)";  
+        DOMSelectors.awman.textContent = "Nothing Found. Search Something Else?";  
         }
         else {
                 for (let i = 0; i < same.length; i++) {
@@ -47,7 +47,7 @@ const same = [];
 
         catch (error) {
         console.log(error, "UH OH");
-        DOMSelectors.awman.textContent = "Oopsies nothing fouund ;)";   
+        DOMSelectors.awman.textContent = "Error Nothing Found. ";   
         }; } ) 
         
 
