@@ -45,6 +45,28 @@ const same = [];
                     <div class="card-text"> ${"Category: " + eachone.strCategory}</div>
                     <div class="card-text"> ${"Area: "+ eachone.strArea}</div>
                     <img src= ${eachone.strMealThumb} class="card-img">
+                    <div class="ing"> ${eachone.strIngredient1} ${eachone.strMeasure1}</div>
+                    <div class="ing"> ${eachone.strIngredient2}  ${eachone.strMeasure2}</div>
+                    <div class="ing"> ${eachone.strIngredient3}  ${eachone.strMeasure3}</div>
+                    <div class="ing"> ${eachone.strIngredient4}  ${eachone.strMeasure4}</div>
+                    <div class="ing"> ${eachone.strIngredient5}  ${eachone.strMeasure5}</div>
+                    <div class="ing"> ${eachone.strIngredient6}  ${eachone.strMeasure6}</div>
+                    <div class="ing"> ${eachone.strIngredient7}  ${eachone.strMeasure7}</div>
+                    <div class="ing"> ${eachone.strIngredient8}  ${eachone.strMeasure8}</div>
+                    <div class="ing"> ${eachone.strIngredient9}  ${eachone.strMeasure9}</div>
+                    <div class="ing"> ${eachone.strIngredient10}  ${eachone.strMeasure10}</div>
+                    <div class="ing"> ${eachone.strIngredient11}  ${eachone.strMeasure11}</div>
+                    <div class="ing"> ${eachone.strIngredient12}  ${eachone.strMeasure12}</div>
+                    <div class="ing"> ${eachone.strIngredient13}  ${eachone.strMeasure13}</div>
+                    <div class="ing"> ${eachone.strIngredient14}  ${eachone.strMeasure14}</div>
+                    <div class="ing"> ${eachone.strIngredient15}  ${eachone.strMeasure15}</div>
+                    <div class="ing"> ${eachone.strIngredient16}  ${eachone.strMeasure16}</div>
+                    <div class="ing"> ${eachone.strIngredient17}  ${eachone.strMeasure17}</div>
+                    <div class="ing"> ${eachone.strIngredient18}  ${eachone.strMeasure18}</div>
+                    <div class="ing"> ${eachone.strIngredient19}  ${eachone.strMeasure19}</div>
+                    <div class="ing"> ${eachone.strIngredient20}  ${eachone.strMeasure20}</div>
+
+
                     <div class="card-inst"> ${"Instructions: " + eachone.strInstructions}</div>
                   </div> 
                 `)

@@ -11,7 +11,7 @@ html,
 h1 {
     text-align: center;
     font-size: var(--h1);
-    color: var(--secondary);
+    color: var(--black);
     padding-top: 20px;
 }
 
@@ -44,7 +44,7 @@ h1 {
     margin-top: 20px ;
     text-align: center;
     color: var(--primary);
-    background-color: var(--secondary);
+    background-color: var(--white);
 
 }
 
@@ -52,6 +52,13 @@ h1 {
     text-align: center;
 color: var(--primary);
 background-color: var(--white);
+}
+
+.ing {
+color: var(--dark);
+background-color: var(--white);
+font-size: var(--h4);
+text-align: center;
 }
 
 .card-img {
@@ -69,12 +76,14 @@ color: var(--black);
 background-color: var(--white);
 font-size: var(--h4);
 border-radius: 5%;
-margin-bottom: 20px; }
+margin-bottom: 20px; 
+margin-top: 10px;}
 
 
 :root {
     --black: #000000;
     --light: #b0a592;
+    --dark: #5e3f0b;
     --white: #ffffff;
     --h1: 3.375rem;
     --h2: 2.25rem;
@@ -85,6 +94,7 @@ margin-bottom: 20px; }
 
 
     --primary: var(--light);
+    --secondary: var(--dark)
 }
 
 .card {
