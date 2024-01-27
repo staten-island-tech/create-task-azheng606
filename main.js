@@ -1,19 +1,19 @@
 const DOMSelectors = {
         box:document.querySelector(".box"),
         start: document.querySelector("#start"),
+        form: document.querySelector("#form"),
         end: document.querySelector("#end"),
         category:document.querySelector(".category"),
         ingredient:document.querySelector(".ingredient"),
         awman:document.querySelector(".awman"),
 }
 
-const URL = "https://www.themealdb.com/api/json/v1/1/search.php?s="
-const same = [];
 
-DOMSelectors.end.addEventListener("click" ,function (event) { 
+DOMSelectors.end.addEventListener("click" , async function recipes (event) { 
         event.preventDefault(); 
-            clearfields();
-async function recipes (URL) {
+        clearfields();
+        const URL = "https://www.themealdb.com/api/json/v1/1/search.php?s="
+const same = [];
         try {
                 const response = await fetch(URL);
                 if (response.status != 200){
@@ -23,35 +23,35 @@ async function recipes (URL) {
 
               for (let i = 0; i < all.meals.length; i++) {
                 const each = all.meals [i]
-                if (each.category === DOMSelectors.category.textContent) {
+                if (each.strCategory === DOMSelectors.category.value) {
                   same.push (each);
 
                 }}
         if (same.length === 0) {
         DOMSelectors.awman.textContent = "Oopsies nothing fouund ;)";  
         }
-        else {for (let i = 0; i < same.length; i++) {
+        else {
+                for (let i = 0; i < same.length; i++) {
                 const eachone = same [i]
                 DOMSelectors.box.insertAdjacentHTML("beforeend", `
                 <div class="card">
-                <div class ="h1"> ${eachone.strMeal}</div>
-                    <h3 class="card-text"> ${eachone.strCategory}</h3>
-                    <h3 class="card-text"> ${eachone.strArea}</h3>
-                    <h3 class="card-text"> ${eachone.strInstructions}</h3>
+                <div class="name"> ${"Meal Name: "+ eachone.strMeal} </div>
+                    <div class="card-text"> ${"Category: " + eachone.strCategory}</div>
+                    <div class="card-text"> ${"Area: "+ eachone.strArea}</div>
+                    <img src= ${eachone.strMealThumb} class="card-img">
+                    <div class="card-inst"> ${"Instructions: " + eachone.strInstructions}</div>
                   </div> 
                 `)
         }
         }}
- 
 
         catch (error) {
         console.log(error, "UH OH");
         DOMSelectors.awman.textContent = "Oopsies nothing fouund ;)";   
-        };
-        } recipes(URL);})
+        }; } ) 
         
 
         function clearfields () {
-                DOMSelectors.box.innerHTML= "";
-                DOMSelectors.awman.innerHTML="";
-                } 
+        DOMSelectors.box.innerHTML= "";
+        DOMSelectors.awman.textContent="";
+} 

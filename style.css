@@ -1,75 +1,98 @@
 body, 
 html, 
 *{ 
-    background-color: cyan;
+    background-color: var(--primary);
     margin: 0;
+    padding: 0%;
     align-items: center;
 }
 
 
 h1 {
     text-align: center;
-    font-size: 20px
+    font-size: var(--h1);
+    color: var(--secondary);
+    padding-top: 20px;
 }
 
+#start { 
+    color: var(--black);
+    background-color: var(--primary);
+    font-size: var(--h3);
+    text-align: center;
+}
+
+.awman { 
+    font-size: var(--h3);
+    text-align: center;
+    margin-top: 40px;
+}
+
+#end { 
+    text-align: center;
+}
 .box {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
-    align-content: center; }
-
-
+    align-content: center; 
+}
 
 .name {
-    font-size: 15px;
+    font-size: var(--h2);
     margin-top: 20px ;
     text-align: center;
-    color: #e2dddd;
+    color: var(--primary);
+    background-color: var(--secondary);
 
 }
-
 
 .card-text {
-        text-align: center;
-        font-size: 22px;
-        color: #b5a8d9;
-
+    text-align: center;
+color: var(--primary);
+background-color: var(--white);
 }
 
+.card-img {
+width: 30%;
+height: 30%;
+align-items: center;
+margin-left: 35%;
+margin-top: 10px;
+margin-bottom: 10px;
+}
 
-.card { 
-    width: 80%;
-    height: 80%;
-    background-color: #6d5475;
+.card-inst {
+text-align: center;
+color: var(--black);
+background-color: var(--white);
+font-size: var(--h4);
+border-radius: 5%;
+margin-bottom: 20px; }
+
+
+:root {
+    --black: #000000;
+    --light: #b0a592;
+    --white: #ffffff;
+    --h1: 3.375rem;
+    --h2: 2.25rem;
+    --h3: 1.5rem;
+    --h4: 0.8rem;
+    --space: 10px 0px;
+    
+
+
+    --primary: var(--light);
+}
+
+.card {
+    height: 38%;
+    width: 60%;
+    background-color: var(--white);
     align-items: center;
-    margin-left: 2.6%;
+    border-radius: 5%;
+    box-shadow: 10px 5px 5px rgb(34, 35, 35);
+    margin: 15px 1px;
 }
-
-@media screen and (max-width:1200px){
-    .card {
-        width: 28%;
-    }
- }
- @media screen and (max-width:1100px){
-    .card {
-        width: 34%;
-    }
- }
-
-@media screen and (max-width:1000px){
-    .card {
-        width: 43%;
-    }
- }
-
- @media screen and (max-width:1700px){
-    .card {
-        width: 95%;
-    }
- }
- @media screen and (max-width:500px){
-    .card {
-        width: 95%;
-    }
- }
