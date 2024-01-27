@@ -4,6 +4,7 @@ const DOMSelectors = {
         form: document.querySelector("#form"),
         end: document.querySelector("#end"),
         category:document.querySelector(".category"),
+        area:document.querySelector(".area"),
         ingredient:document.querySelector(".ingredient"),
         awman:document.querySelector(".awman"),
 }
@@ -26,7 +27,12 @@ const same = [];
                 if (each.strCategory === DOMSelectors.category.value) {
                   same.push (each);
 
-                }}
+                }
+        
+              /*   if (each.strArea === DOMSelectors.area.value) {
+                        same.push (each);
+      
+                      } */}
         if (same.length === 0) {
         DOMSelectors.awman.textContent = "Nothing Found. Search Something Else?";  
         }
