@@ -24,7 +24,7 @@ const same = [];
 
               for (let i = 0; i < all.meals.length; i++) {
                 const each = all.meals [i]
-                if (each.strCategory === DOMSelectors.category.value) {
+                if (each.strCategory.toLowerCase() === DOMSelectors.category.value.toLowerCase() ) {
                   same.push (each);
 
                 }
