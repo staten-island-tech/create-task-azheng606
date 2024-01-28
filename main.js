@@ -9,7 +9,6 @@ const DOMSelectors = {
         awman:document.querySelector(".awman"),
 }
 
-
 DOMSelectors.end.addEventListener("click" , async function recipes (event) { 
         event.preventDefault(); 
         clearfields();
@@ -26,13 +25,8 @@ const same = [];
                 const each = all.meals [i]
                 if (each.strCategory.toLowerCase() === DOMSelectors.category.value.toLowerCase() ) {
                   same.push (each);
-
                 }
-        
-              /*   if (each.strArea === DOMSelectors.area.value) {
-                        same.push (each);
-      
-                      } */}
+        }
         if (same.length === 0) {
         DOMSelectors.awman.textContent = "Nothing Found. Search Something Else?";  
         }
@@ -78,8 +72,8 @@ const same = [];
         DOMSelectors.awman.textContent = "Error Nothing Found. ";   
         }; } ) 
         
-
-        function clearfields () {
+function clearfields () {
         DOMSelectors.box.innerHTML= "";
-        DOMSelectors.awman.textContent="";
+        DOMSelectors.awman.innerHTML="";
+        DOMSelectors.category.innerHTML= "";
 } 
