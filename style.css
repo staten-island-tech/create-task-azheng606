@@ -19,12 +19,30 @@ h1 {
     background-color: var(--primary);
     font-size: var(--h3);
     text-align: center;
+    margin-top: 14px;
+    margin-bottom: 10px;
 }
 
+.button {
+    background-color: var(--white);
+    border-radius: 25px;
+    font-size: 14px;
+    padding: 7px 13px;
+}
+
+input { 
+    border-radius: 25px;
+
+}
 .awman { 
     font-size: var(--h3);
     text-align: center;
-    margin-top: 40px;
+    margin-top: 60px;
+    color: var(--white);
+    padding: 15px 15px;
+    margin: 15px 15%;
+    border-radius: 10px;
+
 }
 
 #end { 
@@ -75,7 +93,6 @@ text-align: center;
 color: var(--black);
 background-color: var(--white);
 font-size: var(--h4);
-border-radius: 70%;
 margin-bottom: 20px; 
 margin-top: 10px;}
 
@@ -102,7 +119,7 @@ margin-top: 10px;}
     width: 60%;
     background-color: var(--white);
     align-items: center;
-    border-radius: 5%;
-    box-shadow: 10px 5px 5px rgb(34, 35, 35);
-    margin: 15px 1px;
+    box-shadow: 10px 10px 15px rgb(34, 35, 35);
+    margin: 25px 0px;
+    padding: 0px 20px;
 }
