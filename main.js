@@ -70,7 +70,7 @@ const same = [];
         catch (error) {
         console.log(error, "UH OH");
         DOMSelectors.awman.textContent = "Error Nothing Found. ";   
-        }; clearvalue(); } )  
+        }; clearvalue();} )  
         
 function clearfields () {
         DOMSelectors.box.innerHTML= "";
