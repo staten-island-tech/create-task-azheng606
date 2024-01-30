@@ -1,0 +1,125 @@
+body, 
+html, 
+*{ 
+    background-color: var(--primary);
+    margin: 0;
+    padding: 0%;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+    font-size: var(--h1);
+    color: var(--black);
+    padding-top: 20px;
+}
+
+#start { 
+    color: var(--black);
+    background-color: var(--primary);
+    font-size: var(--h3);
+    text-align: center;
+    margin-top: 14px;
+    margin-bottom: 10px;
+}
+
+.button {
+    background-color: var(--white);
+    border-radius: 25px;
+    font-size: 14px;
+    padding: 7px 13px;
+}
+
+input { 
+    border-radius: 25px;
+
+}
+.awman { 
+    font-size: var(--h3);
+    text-align: center;
+    margin-top: 60px;
+    color: var(--white);
+    padding: 15px 15px;
+    margin: 15px 15%;
+    border-radius: 10px;
+
+}
+
+#end { 
+    text-align: center;
+}
+
+.box {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center; 
+}
+
+.name {
+    font-size: var(--h2);
+    margin-top: 20px ;
+    text-align: center;
+    color: var(--primary);
+    background-color: var(--white);
+
+}
+
+.card-text {
+    text-align: center;
+color: var(--primary);
+background-color: var(--white);
+}
+
+.ing {
+color: var(--dark);
+background-color: var(--white);
+font-size: var(--h4);
+text-align: center;
+}
+
+.card-img {
+width: 30%;
+height: 30%;
+align-items: center;
+margin-left: 35%;
+margin-top: 10px;
+margin-bottom: 10px;
+}
+
+.card-inst {
+text-align: center;
+color: var(--black);
+background-color: var(--white);
+font-size: var(--h4);
+margin-bottom: 20px; 
+margin-top: 10px;}
+
+
+:root {
+    --black: #000000;
+    --light: #b0a592;
+    --dark: #5e3f0b;
+    --white: #ffffff;
+    --h1: 3.375rem;
+    --h2: 2.25rem;
+    --h3: 1.5rem;
+    --h4: 0.8rem;
+    --space: 10px 0px;
+    
+
+
+    --primary: var(--light);
+    --secondary: var(--dark)
+}
+
+.card {
+    height: 38%;
+    width: 60%;
+    background-color: var(--white);
+    align-items: center;
+    box-shadow: 10px 10px 15px rgb(34, 35, 35);
+    margin: 25px 0px;
+    padding: 0px 20px;
+}
