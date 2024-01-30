@@ -9,8 +9,7 @@ const DOMSelectors = {
         awman:document.querySelector(".awman"),
 }
 
-async function recipes (input) { 
-        
+async function recipes (categoryinput) { 
         clearfields();
         const URL = "https://www.themealdb.com/api/json/v1/1/search.php?s="
 const same = [];
@@ -23,7 +22,7 @@ const same = [];
 
               for (let i = 0; i < all.meals.length; i++) {
                 const each = all.meals [i]
-                if (each.strCategory.toLowerCase() === input.toLowerCase() ) {
+                if (each.strCategory.toLowerCase() === categoryinput.toLowerCase() ) {
                   same.push (each);
                 }
         }
