@@ -9,8 +9,8 @@ const DOMSelectors = {
         awman:document.querySelector(".awman"),
 }
 
-DOMSelectors.end.addEventListener("click" , async function recipes (event) { 
-        event.preventDefault(); 
+async function recipes (input) { 
+        
         clearfields();
         const URL = "https://www.themealdb.com/api/json/v1/1/search.php?s="
 const same = [];
@@ -23,7 +23,7 @@ const same = [];
 
               for (let i = 0; i < all.meals.length; i++) {
                 const each = all.meals [i]
-                if (each.strCategory.toLowerCase() === DOMSelectors.category.value.toLowerCase() ) {
+                if (each.strCategory.toLowerCase() === input.toLowerCase() ) {
                   same.push (each);
                 }
         }
@@ -70,7 +70,15 @@ const same = [];
         catch (error) {
         console.log(error, "UH OH");
         DOMSelectors.awman.textContent = "Error Nothing Found. ";   
-        }; clearvalue();} )  
+        }; clearvalue();} 
+
+
+
+        DOMSelectors.end.addEventListener("click" , function (event){
+                event.preventDefault(); 
+                recipes(DOMSelectors.category.value);
+
+        })
         
 function clearfields () {
         DOMSelectors.box.innerHTML= "";
