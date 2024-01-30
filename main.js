@@ -8,7 +8,6 @@ const DOMSelectors = {
         ingredient:document.querySelector(".ingredient"),
         awman:document.querySelector(".awman"),
 }
-
 async function recipes (categoryinput) { 
         clearfields();
         const URL = "https://www.themealdb.com/api/json/v1/1/search.php?s="
@@ -70,7 +69,6 @@ const same = [];
         console.log(error, "UH OH");
         DOMSelectors.awman.textContent = "Error Nothing Found. ";   
         }; clearvalue();} 
-
 
 
         DOMSelectors.end.addEventListener("click" , function (event){
